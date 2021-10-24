@@ -33,6 +33,14 @@ body {
     transition: 0.2s;
 }
 
+.nav {
+    text-align: center;
+    position: sticky;
+    font-size: 14px;
+    top: 30px;
+    transition: 0.2s;
+}
+
 
 /* nav */
 
@@ -108,9 +116,10 @@ li a:hover {
     align-items: center;
     display: inline-flex;
     /* min-width: 297.89px; */
-    padding: 13px 102px 55px 62px;
-    font-size: 55%;
+    padding: 13px 13px 55px 62px;
+    font-size: 50%;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 #Casts h2 {
@@ -120,7 +129,7 @@ li a:hover {
 }
 
 .ActorsActresses div {
-    /* display: inline-flex; */
+    display: inline-flex;
     line-height: 51px;
     letter-spacing: 2.2px;
     justify-content: space-between;
@@ -142,7 +151,7 @@ li a:hover {
 
 .about {
     background-color: rgb(43, 176, 241);
-    display: grid;
+    display: flex;
     align-items: center;
     padding: 51px 124px 96px 63px;
     font-size: 115.5%;
@@ -213,20 +222,19 @@ a {
 
 #MichaelScottQuotes2 {
     display: inline-block;
-    padding: 0.7em 1.7em;
-    margin: 0 0.3em 0.3em 0;
+    /* padding: 0.7em 1.7em;
+    margin: 0 0.3em 0.3em 0; */
     border-radius: 0.2em;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: #FFFFFF;
-    width: 600px;
-    height: 250px;
+    /* width: 600px;
+    height: 250px; */
     background-color: #3369ff;
     box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17), inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
     text-align: center;
-    position: relative;
 }
 
 #MichaelScottQuotes:active {
@@ -243,14 +251,14 @@ a {
 
 #watch {
     background-color: rgb(199, 222, 233);
-    display: grid;
+    display: flex;
     align-items: center;
-    padding: 51px 124px 96px 63px;
+    /* padding: 51px 124px 96px 63px; */
     font-size: 115.5%;
     /* margin: 0; */
     /* justify-content: space-between; */
     /* grid-template: auto / auto auto; */
-    grid-column-gap: 354px;
+    /* grid-column-gap: 354px; */
 }
 
 @media all and (max-width:30em) {
@@ -264,19 +272,20 @@ a {
 /* table where to watch  */
 
 table.center {
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    align-items: center;
 }
 
 table.blueTable {
     border: 0px solid #1C6EA4;
     background-color: #EEEEEE;
-    width: 800px;
+    /* width: 800px; */
     text-align: left;
     border-collapse: collapse;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 table.blueTable td,
@@ -325,4 +334,33 @@ table.blueTable tfoot {
 
 table.blueTable tfoot td {
     font-size: 14px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+#aboutimage {
+    align-items: center;
 }

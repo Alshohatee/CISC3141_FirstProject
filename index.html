@@ -8,19 +8,20 @@
     <!-- font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="styles.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, 
+    maximum-scale=2.0, user-scalable=yes">
     <title>The office Tv Show Fans Page </title>
 </head>
 
-<body>
+<body class="container">
 
     <div class="welcomeMessage">
         <h1>Welcome to The office Tv Show Fans Page</h1>
     </div>
-
+    <h1 id="TitleHeading">The office Tv Show Fans</h1>
     <!-- the actual nav kinda -->
-    <nav id="TitleHeading">
-        <h1>The office Tv Show Fans</h1>
+    <nav class="nav">
+
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#Casts">Casts</a></li>
@@ -65,7 +66,7 @@
 
 
 
-    <section class="ActorsActresses" id="Casts">
+    <section class="ActorsActresses container" id="Casts">
         <h2>Casts</h2>
         <div class="cast-box">
             <img height="97" src="./images/staff/michael-scott.png" width="97">
@@ -139,30 +140,29 @@
     </section>
     <section class="about">
         <article class="text-about" id="MichaelScottQuotes2">
-            <h2><b>Michael Scott Quotes </b></h2>
-            <!-- <p>This US adaptation, set at a paper company in Scranton, Pa., has a similar documentary style to that of the Ricky Gervais-led British original. It features the staff of Dunder-Mifflin, a staff that includes characters based on characters from
-                the British show (and, quite possibly, people you work with in your office) There's Jim, the likable employee who's a bit of an everyman. Jim has a thing for receptionist-turned-sales rep Pam (because office romances are always a good
-                idea). There's also Dwight, the successful co-worker who lacks social skills an common sense. And there's Ryan, who has held many jobs at the company.</p> -->
+            <div>
+                <h2><b>Michael Scott Quotes </b></h2>
+                <p id="micheleQuotes"> </p>
+                <input id="getMicheleQuotes" type="button" value="Get Quotes" onClick="userAction()">
+            </div>
+            <div id="aboutimage">
+                <img height="auto" src="./images/Scott.gif" width="300">
 
-            <p id="micheleQuotes"> </p>
-            <input id="getMicheleQuotes" type="button" value="Get Quotes" onClick="userAction()">
+
+            </div>
         </article>
-        <div id="aboutimage">
-            <img height="auto" width="auto" src="./images/Scott.gif" width="600">
 
-
-        </div>
     </section>
     </section>
     <section id="watch">
 
-        <table class="blueTable center">
+        <table class="blueTable center container">
             <thead>
                 <tr>
-                    <th>Where</th>
-                    <th>how much starting</th>
+                    <th width="10%">Where</th>
+                    <th width="10%">how much starting</th>
 
-                    <th>watch</th>
+                    <th width="10%">watch</th>
                 </tr>
             </thead>
             <tfoot>
