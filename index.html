@@ -8,32 +8,40 @@
     <!-- font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #TitleHeading {
+            background: #ececec;
+            ;
+        }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, 
     maximum-scale=2.0, user-scalable=yes">
     <title>The office Tv Show Fans Page </title>
 </head>
 
 <body class="container">
+    <!-- header -->
+    <div>
+        <div class="welcomeMessage">
+            <h1>Welcome to The office Tv Show Fans Page</h1>
+        </div>
+        <h1 id="TitleHeading">The office Tv Show Fans</h1>
+        <!-- the actual nav kinda -->
+        <nav class="nav">
 
-    <div class="welcomeMessage">
-        <h1>Welcome to The office Tv Show Fans Page</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Casts">Casts</a></li>
+                <li><a href="#MichaelScottQuotes">Michael Scott Quotes</a></li>
+                <li><a href="#watch">Watch</a></li>
+            </ul>
+        </nav>
+        <div class="imgbox center-fit"></div>
     </div>
-    <h1 id="TitleHeading">The office Tv Show Fans</h1>
-    <!-- the actual nav kinda -->
-    <nav class="nav">
-
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#Casts">Casts</a></li>
-            <li><a href="#MichaelScottQuotes">Michael Scott Quotes</a></li>
-            <li><a href="#watch">Watch</a></li>
-        </ul>
-    </nav>
 
     <!-- image in the background under the nav -->
-    <div class="imgbox center-fit"></div>
 
-
+    <!-- home -->
     <div class="par" id="home">
         <p>The Office is an American television sitcom that depicts the everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company. It aired on NBC from March 24, 2005, to May 16, 2013, lasting a
             total of nine seasons.[1] It is an adaptation of the original BBC series of the same name and was adapted for American television by Greg Daniels, a veteran writer for Saturday Night Live, King of the Hill, and The Simpsons. It was co-produced
@@ -47,25 +55,18 @@
             such as a Peabody Award in 2006, two Screen Actors Guild Awards, a Golden Globe Award for Carell's performance, and four Primetime Emmy Awards, including one for Outstanding Comedy Series in 2006. Later seasons were criticized for a decline
             in quality, with many seeing Carell's departure in season seven as a contributing factor. However, the final season ended the series' run with a generally positive response. The series finale was viewed by an estimated 5.69 million viewers,
             following by an hour-long series retrospective.</p>
+        <h5>The writers:</h5>
+        <ol style=" display: flex;">
+            <li style=" width: 100%;"> B. J. Novak</li>
+            <li style=" width: 100%;"> Paul Lieberstein</li>
+            <li style=" width: 100%;">Michael Schur</li>
+            <li style=" width: 100%;">Paul Lieberstein</li>
+            <li style=" width: 100%;">Ricky Gervais & Stephen Merchant and Greg Daniels</li>
+        </ol>
     </div>
 
 
-
-
-    <div class="par">
-        <p>Munder Difflin – Dunder Mifflin’s Sister Co</p>
-        <p>Munder Difflin Paper Co is the sister company of the great Dunder Mifflin Paper Co. The majority of people in the world (100% if you have a Netflix account) are familiar with the TV series, “The Office.” That’s how Dunder Mifflin became famous
-            and stayed in business for 9 years!</p>
-
-        <p> Well, Munder Difflin has been in business for 6 months and we didn’t need some multi-million dollar TV production to keep us afloat. All we need, and what we pride ourself in, is the best paper in town!</p>
-
-        <p>Work in an office? Own a mailbox? Pay with cash? Whoever you are, and whatever you do, if you live in Scranton, Pennsylvania, you use our paper every day. If you are the one in a million that doesn’t, you should, because “Bread is the paper of
-            the food industry. You write your sandwich on it.” – Dwight Schrute</p>
-    </div>
-
-
-
-
+    <!-- casts -->
     <section class="ActorsActresses container" id="Casts">
         <h2>Casts</h2>
         <div class="cast-box">
@@ -84,7 +85,6 @@
 
         <div class="cast-box">
             <img height="97" src="./images/staff/pam-beasley.png" width="97">
-
             <div>
                 <p class="namesofCasts">Pam Beesly</p>
             </div>
@@ -106,7 +106,6 @@
 
         <div class="cast-box">
             <img height="97" src="./images/staff/ryan-howard.png" width="97">
-
             <div>
                 <p class="namesofCasts">Ryan Howard</p>
             </div>
@@ -121,7 +120,6 @@
 
         <div class="cast-box">
             <img height="97" src="./images/staff/kevin-malone.png" width="97">
-
             <div>
                 <p class="namesofCasts">Kevin Malone</p>
             </div>
@@ -129,40 +127,37 @@
 
         <div class="cast-box">
             <img height="97" src="./images/staff/creed-bratton.png" width="97">
-
             <div>
                 <p class="namesofCasts">Creed Bratton</p>
             </div>
         </div>
-
-
-
     </section>
+
+
     <section class="about">
         <article class="text-about" id="MichaelScottQuotes2">
             <div>
                 <h2><b>Michael Scott Quotes </b></h2>
+
                 <p id="micheleQuotes"> </p>
                 <input id="getMicheleQuotes" type="button" value="Get Quotes" onClick="userAction()">
             </div>
             <div id="aboutimage">
                 <img height="auto" src="./images/Scott.gif" width="300">
-
-
             </div>
         </article>
+    </section>
 
-    </section>
-    </section>
+    <!-- streams -->
     <section id="watch">
-
+        <h2 style="text-align: center;"><b>Streams To watch TV show </b></h2>
         <table class="blueTable center container">
             <thead>
                 <tr>
-                    <th width="10%">Where</th>
-                    <th width="10%">how much starting</th>
+                    <th width="10%">Stream Services</th>
+                    <th width="10%">Price</th>
 
-                    <th width="10%">watch</th>
+                    <th width="10%">Link</th>
                 </tr>
             </thead>
             <tfoot>
@@ -225,7 +220,6 @@
                         <a href="https://www.peacocktv.com/signin?return=%2Fwatch%2Fasset%2Ftv%2Fthe-office%2F4902514835143843112"> Watch it</a>
                     </td>
                 </tr>
-
             </tbody>
         </table>
     </section>
